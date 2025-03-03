@@ -27,6 +27,8 @@ class SportsCar extends Car(){
 }
 
 
+window.Car = Car;
+window.SportsCar = SportsCar;
 
 
 
