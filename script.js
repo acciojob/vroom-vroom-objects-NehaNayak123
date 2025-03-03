@@ -7,19 +7,19 @@
 // window.Car = Car;
 // window.SportsCar = SportsCar;
 // ////////////////////////////////////
-class Car(){
+class Car{
 	constructor(make, model){
-		make=this.make,
-		model=this.model
+		this.make=make,
+		this.model=model
 	}
 	getMakeModel(){
 		return `${this.make} ${this.model}`
 	}
 }
-class SportsCar extends Car(){
+class SportsCar extends Car{
 	constructor(make, model,topSpeed){
 		super(make, model);
-		topSpeed=this.topSpeed;
+		this.topSpeed=topSpeed;
 	}
 	getTopSpeed(){
 		return this.topSpeed
